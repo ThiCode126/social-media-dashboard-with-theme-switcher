@@ -6,7 +6,12 @@ const CardOverview = ({ item }) => {
     <div id={item.id} className={`card`}>
       <div className="card__header">
         <span>{item.text}</span>
-        <img src={`./assets/icon-${item.id}.svg`} alt="logo" />
+        <img
+          height="20"
+          width="20"
+          src={`./assets/icon-${item.id}.svg`}
+          alt="logo"
+        />
       </div>
       <div className="card__body">
         <h2>{item.number}</h2>

@@ -5,7 +5,12 @@ const CardDashBoard = ({ item }) => {
   return (
     <div id={item.id} className={`card`}>
       <div className="card__header">
-        <img src={`./assets/icon-${item.id}.svg`} alt="logo" />
+        <img
+          height="20"
+          width="20"
+          src={`./assets/icon-${item.id}.svg`}
+          alt="logo"
+        />
         <span>{item.pseudo}</span>
       </div>
       <div className="card__body">
