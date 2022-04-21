@@ -3,7 +3,7 @@ import { overviewData } from "../utils/dataText";
 
 const CardOverview = ({ item }) => {
   return (
-    <div id={item.id} className={`card`}>
+    <div className={`card`}>
       <div className="card__header">
         <span>{item.text}</span>
         <img

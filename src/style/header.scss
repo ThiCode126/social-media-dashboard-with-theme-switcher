@@ -70,7 +70,7 @@
 */
 @media (min-width: 1440px) {
   #header-app {
-    @include pY(36px, 66px);
+    @include pY(36px, 46px);
     &::after {
       content: "";
       @include wh(1440px, 244px);
