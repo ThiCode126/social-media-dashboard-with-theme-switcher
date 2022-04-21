@@ -82,3 +82,22 @@
     }
   }
 }
+
+/**
+* ? DeskTop
+*/
+@media (min-width: 1440px) {
+  #dashboard {
+    .cw {
+      flex-direction: row;
+      gap: 30px;
+
+      .card {
+        width: 255px;
+        &::before {
+          width: 255px;
+        }
+      }
+    }
+  }
+}

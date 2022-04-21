@@ -64,3 +64,34 @@
     }
   }
 }
+
+/**
+* ? DeskTop
+*/
+@media (min-width: 1440px) {
+  #header-app {
+    @include pY(36px, 66px);
+    &::after {
+      content: "";
+      @include wh(1440px, 244px);
+    }
+
+    .cw {
+      @include flexSpaceBetween;
+      .header__1 {
+        border-bottom: none;
+        padding-bottom: 0;
+        h1 {
+          @include text(28px, 34px);
+        }
+        span {
+          margin-top: 3px;
+        }
+      }
+      .header__2 {
+        padding-top: 0;
+        width: 136px;
+      }
+    }
+  }
+}
