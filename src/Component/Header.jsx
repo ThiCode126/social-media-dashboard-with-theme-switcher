@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Header = ({ setIsDarkMode, isDarkMode }) => {
+const Header = () => {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  const toggleTheme = () => {
+    if (document.body.className.includes("dark")) {
+      document.body.className = "light switch";
+      setIsDarkMode(false);
+    } else {
+      document.body.className = "dark switch";
+      setIsDarkMode(true);
+    }
+  };
+
   return (
     <header id="header-app">
       <div className="cw">
@@ -12,7 +24,7 @@ const Header = ({ setIsDarkMode, isDarkMode }) => {
           <span>Dark Mode</span>
           <div
             className={`toggle ${isDarkMode ? "dark" : "light"}`}
-            onClick={() => setIsDarkMode(!isDarkMode)}
+            onClick={() => toggleTheme()}
           >
             <div className="round"></div>
           </div>

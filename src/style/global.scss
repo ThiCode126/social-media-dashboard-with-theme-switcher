@@ -2,7 +2,9 @@ body {
   background-color: var(--bg-1);
   color: var(--color-1);
   font-family: "Inter", sans-serif;
-  // transition: all ease 500ms;
+  &.switch {
+    transition: all ease-in-out 1s;
+  }
   #root {
     width: 375px;
     margin: 0 auto;

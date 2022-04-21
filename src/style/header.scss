@@ -17,6 +17,7 @@
       border-bottom: 1px solid var(--border-1);
       padding-bottom: 24px;
       h1 {
+        margin-bottom: -4px;
         font-weight: 700;
         @include text(24px, 29px);
       }
@@ -47,7 +48,7 @@
           @include wh(18px);
           position: absolute;
           top: 3px;
-          transition: all ease 500ms;
+          transition: all ease 700ms;
           z-index: 10;
         }
         &.dark {
