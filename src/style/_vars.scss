@@ -1,6 +1,32 @@
-:root {
-  --white: #fff;
-  --dark: #0e0e10;
+body {
+  --fb: #178ff5;
+  --tw: #1da1f2;
+  --ig: linear-gradient(225deg, #df4896 0%, #ee877e 50.91%, #fdc366 100%);
+  --yt: #c4032b;
+  --green: #1eb589;
+  --red: #dc414c;
+  &.dark {
+    --bg-1: #1d1f29; // Body
+    --bg-2: #20222f; // Header
+    --bg-3: #252b42; // Card
+    --bg-4: #333a55; // Card Hover
+    --bg-5: linear-gradient(225deg, #40db82 0%, #388fe7 98.02%); // Toggle
+    --color-1: #fff; // Titre / Nombres
+    --color-2: #8c98c6; // Sous-titre / Followers
+    --color-3: #fff; // Toggle-text
+    --border-1: #333a55; // Header Separator
+  }
+  &.light {
+    --bg-1: #fff; // Body
+    --bg-2: #f7f9ff; // Header
+    --bg-3: #f1f3fa; // Card
+    --bg-4: #e1e4f0; // Card Hover
+    --bg-5: #aeb3cb; // Toggle
+    --color-1: #1d1f29; // Titre / Nombres
+    --color-2: #63687d; // Sous-titre / Followers
+    --color-3: #848bab; // Toggle-text
+    --border-1: #848bab; // Header Separator
+  }
 }
 
 @mixin text($font, $line: $font, $ls: normal) {

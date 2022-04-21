@@ -2,5 +2,10 @@
 @import "~sanitize.css/forms.css";
 @import "~sanitize.css/typography.css";
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 @import "./style/vars";
 @import "./style/global";
+@import "./style/header";
+@import "./style/dashboard";
+@import "./style/overview";

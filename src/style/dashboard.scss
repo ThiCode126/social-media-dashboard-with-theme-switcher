@@ -1,0 +1,84 @@
+#dashboard {
+  padding-bottom: 46px;
+  .cw {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .card {
+      background-color: var(--bg-3);
+      border-radius: 5px;
+      text-align: center;
+      @include pY(32px, 24px);
+
+      position: relative;
+      &::before {
+        content: "";
+        border-radius: 4px 4px 0 0;
+        @include wh(326px, 4px);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &#fb {
+        &::before {
+          background: var(--fb);
+        }
+      }
+      &#tw {
+        &::before {
+          background: var(--tw);
+        }
+      }
+      &#ig {
+        &::before {
+          background: var(--ig);
+        }
+      }
+      &#yt {
+        &::before {
+          background: var(--yt);
+        }
+      }
+
+      .card__header {
+        @include flexCenter;
+        gap: 8px;
+        span {
+          color: var(--color-2);
+          font-weight: 700;
+          @include text(12px, 15px);
+        }
+      }
+      .card__body {
+        @include pY(28px, 25px);
+        h2 {
+          font-weight: 700;
+          @include text(56px, 48px);
+          margin-bottom: 9px;
+        }
+        span {
+          color: var(--color-2);
+          @include text(12px, 15px, 5px);
+          text-transform: uppercase;
+        }
+      }
+      .card__footer {
+        @include flexCenter;
+        gap: 4px;
+        span {
+          font-weight: 700;
+          @include text(12px, 15px);
+
+          &.green {
+            color: var(--green);
+          }
+          &.red {
+            color: var(--red);
+          }
+        }
+      }
+    }
+  }
+}

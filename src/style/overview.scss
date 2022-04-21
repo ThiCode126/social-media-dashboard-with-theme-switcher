@@ -1,0 +1,52 @@
+#overview {
+  padding-bottom: 45px;
+  .cw {
+    h3 {
+      font-weight: 700;
+      @include text(24px, 29px);
+      margin-bottom: 27px;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .card {
+        background-color: var(--bg-3);
+        border-radius: 5px;
+        padding: 26px 31px 19px 24px;
+
+        .card__header {
+          @include flexSpaceBetween;
+          margin-bottom: 23px;
+          span {
+            color: var(--color-2);
+            font-weight: 700;
+            @include text(14px, 17px);
+          }
+        }
+        .card__body {
+          @include flexSpaceBetween;
+          h2 {
+            font-weight: 700;
+            @include text(32px, 39px);
+          }
+          .percent {
+            @include flexCenter;
+            gap: 2px;
+            span {
+              font-weight: 700;
+              @include text(12px, 15px);
+
+              &.green {
+                color: var(--green);
+              }
+              &.red {
+                color: var(--red);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

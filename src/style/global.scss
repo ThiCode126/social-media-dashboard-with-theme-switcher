@@ -1,27 +1,38 @@
-.content-wrapper {
-  width: 327px;
-  margin: 0 auto;
-}
-
 body {
-  color: var(--white);
-  background-color: var(--dark);
+  background-color: var(--bg-1);
+  color: var(--color-1);
+  font-family: "Inter", sans-serif;
+  // transition: all ease 500ms;
+  #root {
+    width: 375px;
+    margin: 0 auto;
+    .cw {
+      width: 326px;
+      margin: 0 auto;
+    }
+  }
 }
 
-/**
-* ? Tablet
-*/
-@media (min-width: 768px) {
-  .content-wrapper {
-    width: 688px;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  @include mY(0);
 }
 
 /**
 * ? DeskTop
 */
 @media (min-width: 1440px) {
-  .content-wrapper {
-    width: 1110px;
+  body {
+    #root {
+      width: 1440px;
+      .cw {
+        width: 1110px;
+      }
+    }
   }
 }

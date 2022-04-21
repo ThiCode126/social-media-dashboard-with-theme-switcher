@@ -1,0 +1,66 @@
+#header-app {
+  @include pY(36px, 40px);
+  position: relative;
+  &::after {
+    content: "";
+    background-color: var(--bg-2);
+    border-radius: 0px 0px 20px 20px;
+    @include wh(375px, 235px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .cw {
+    .header__1 {
+      border-bottom: 1px solid var(--border-1);
+      padding-bottom: 24px;
+      h1 {
+        font-weight: 700;
+        @include text(24px, 29px);
+      }
+      span {
+        font-weight: 700;
+        @include text(14px, 17px);
+        color: var(--color-2);
+      }
+    }
+    .header__2 {
+      padding-top: 16px;
+      @include flexSpaceBetween;
+      span {
+        color: var(--color-3);
+        font-weight: 700;
+        @include text(14px, 17px);
+      }
+      .toggle {
+        cursor: pointer;
+        @include wh(48px, 24px);
+        background: var(--bg-5);
+        border-radius: 12px;
+        position: relative;
+        &::after {
+          content: "";
+          background-color: var(--bg-3);
+          border-radius: 50%;
+          @include wh(18px);
+          position: absolute;
+          top: 3px;
+          transition: all ease 500ms;
+          z-index: 10;
+        }
+        &.dark {
+          &::after {
+            left: 3px;
+          }
+        }
+        &.light {
+          &::after {
+            left: 26px;
+          }
+        }
+      }
+    }
+  }
+}
